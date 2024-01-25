@@ -1,5 +1,5 @@
 # Use the official Tomcat image as the base image
-FROM tomcat:latest
+FROM tomcat:8-jre11
 
 # Remove the default webapps folder
 RUN rm -rf /usr/local/tomcat/webapps/*
