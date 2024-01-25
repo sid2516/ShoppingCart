@@ -5,7 +5,7 @@ FROM tomcat:latest
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file into the webapps directory
-COPY ./shopieasy.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/shopieasy.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose the port on which Tomcat will run
 EXPOSE 8080
