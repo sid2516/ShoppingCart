@@ -1,5 +1,5 @@
 # Use an official Tomcat runtime as a base image
-FROM tomcat:latest
+FROM tomcat:8.0.20-jre8
 
 # Remove the default Tomcat webapps to make space for your WAR file
 RUN rm -rf /usr/local/tomcat/webapps/*
